@@ -1,5 +1,13 @@
 package ru.netology.maven.Java10;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+
 public class Radio {
     private int minRadioNumber = 0;
     private int maxRadioNumber = 9;
@@ -9,26 +17,27 @@ public class Radio {
     private int maxSoundVolume = 100;
     private int soundVolume = minSoundVolume;
 
-    //  --------- РАДИО ---------
-    public Radio() {
-    }
 
+    //  --------- РАДИО ---------
+//    public Radio() {
+//    }
+//
     public Radio(int size) {
         this.sizeRadio = size - 1;
         this.maxRadioNumber = minRadioNumber + sizeRadio;
     }
-
-    public int getMinRadioNumber() {
-        return minRadioNumber;
-    }
-
-    public int getMaxRadioNumber() {
-        return maxRadioNumber;
-    }
-
-    public int getRadioNumber() {
-        return radioNumber;
-    }
+//
+//    public int getMinRadioNumber() {
+//        return minRadioNumber;
+//    }
+//
+//    public int getMaxRadioNumber() {
+//        return maxRadioNumber;
+//    }
+//
+//    public int getRadioNumber() {
+//        return radioNumber;
+//    }
 
     public void setRadioNumber(int newRadioNumber) {
         if (newRadioNumber < minRadioNumber) {

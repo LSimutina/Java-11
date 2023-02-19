@@ -10,6 +10,16 @@ public class RadioTest {
     Radio vol = new Radio();
 
     @Test
+    public void shouldCreate(){
+        Radio radio = new Radio();
+        radio.setToMaxNumber();
+
+        int expected = 9;
+        int actual = radio.getMaxRadioNumber();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void test() {
         Radio radio = new Radio();
 
